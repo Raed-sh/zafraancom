@@ -1,10 +1,10 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
+import { images } from "@/lib/images";
 import "./globals.css";
 
-const siteUrl = "https://zaffarn.vercel.app";
-const logoUrl =
-  "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-f6vPmlgnlBH7NxeDLLXRxeafAT2vto.jpg";
+const siteUrl = "https://zaffarn.com";
+const logoUrl = images.logo.src;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -31,7 +31,14 @@ export const metadata: Metadata = {
     siteName: "زعفرانكم | Zaffarn",
     title: "زعفرانكم | زعفران أردني أصيل",
     description: "اكتشف الزعفران الأردني الأصيل ومنتجاته الطبيعية المختارة.",
-    images: [{ url: logoUrl, width: 1600, height: 1600, alt: "شعار زعفرانكم" }],
+    images: [
+      {
+        url: logoUrl,
+        width: images.logo.width,
+        height: images.logo.height,
+        alt: "شعار زعفرانكم",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -49,7 +56,7 @@ const structuredData = {
   name: "زعفرانكم",
   alternateName: "Zaffarn",
   url: siteUrl,
-  logo: logoUrl,
+  logo: new URL(logoUrl, siteUrl).href,
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+962778472931",
