@@ -1,12 +1,11 @@
-"use client";
-
-import { ContactInfo, PageShell, copy, useLanguage } from "@/components/site";
 import { OrderForm } from "@/components/order-form";
+import { ContactInfo, PageShell } from "@/components/site";
+import { getLang, type LangParams } from "@/lib/i18n";
 
-export default function OrderPage() {
-  const lang = useLanguage();
+export default async function OrderPage({ params }: LangParams) {
+  const lang = await getLang(params);
   return (
-    <PageShell>
+    <PageShell lang={lang}>
       <main className="order-page page-main">
         <section className="order-intro page-intro">
           <span className="eyebrow">
@@ -38,9 +37,9 @@ export default function OrderPage() {
             <span className="eyebrow">
               {lang === "ar" ? "بيانات الطلب" : "Order details"}
             </span>
-            <OrderForm />
+            <OrderForm lang={lang} />
           </div>
-          <ContactInfo />
+          <ContactInfo lang={lang} />
         </section>
       </main>
     </PageShell>

@@ -1,10 +1,10 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { copy, products, useLanguage } from "./site";
+import { copy, type Lang } from "@/lib/i18n";
+import { products } from "@/lib/products";
 
-export function OrderForm() {
-  const lang = useLanguage();
+export function OrderForm({ lang }: { lang: Lang }) {
   const t = copy[lang];
   const [sent, setSent] = useState(false);
   const [busy, setBusy] = useState(false);
