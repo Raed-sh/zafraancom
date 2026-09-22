@@ -29,6 +29,13 @@ export function Footer({ lang }: { lang: Lang }) {
       <div className="footer-contact">
         <a href="tel:0778472931">077 847 2931</a>
         <a href="mailto:mnysyah@gmail.com">mnysyah@gmail.com</a>
+        <a
+          href="https://www.instagram.com/zafraancom"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @zafraancom
+        </a>
       </div>
       <div className="copyright">
         © 2026{" "}
@@ -146,6 +153,14 @@ export function ContactInfo({ lang }: { lang: Lang }) {
       <a href="mailto:mnysyah@gmail.com">
         <small>{t.email}</small>
         <strong>mnysyah@gmail.com</strong>
+      </a>
+      <a
+        href="https://www.instagram.com/zafraancom"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <small>{t.instagram}</small>
+        <strong>@zafraancom</strong>
       </a>
     </div>
   );
