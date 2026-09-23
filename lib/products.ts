@@ -3,7 +3,7 @@ import { images } from "@/lib/images";
 export const products = [
   {
     id: "saffron",
-    image: images.saffronThreads,
+    image: images.saffronJar,
     ar: {
       name: "زعفران — 1 غرام",
       description:
@@ -19,7 +19,7 @@ export const products = [
   },
   {
     id: "serum",
-    image: images.saffronOil,
+    image: images.saffronSerum,
     ar: {
       name: "زيت / سيروم الزعفران — 10 مل",
       description:

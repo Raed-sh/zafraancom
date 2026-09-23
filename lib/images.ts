@@ -3,16 +3,16 @@ import logo from "@/assets/images/logo.jpg";
 import saffronBowl from "@/assets/images/saffron-bowl.jpg";
 import saffronBulbs from "@/assets/images/saffron-bulbs.jpg";
 import saffronBulbsSoil from "@/assets/images/saffron-bulbs-soil.jpg";
-import saffronOil from "@/assets/images/saffron-oil.jpg";
+import saffronJar from "@/assets/images/saffron-jar.jpg";
+import saffronSerum from "@/assets/images/saffron-serum.jpg";
 import saffronStigmas from "@/assets/images/saffron-stigmas.jpg";
-import saffronThreads from "@/assets/images/saffron-threads.jpg";
 
 export const images = {
   logo,
   saffronBowl,
   saffronBulbs,
   saffronBulbsSoil,
-  saffronOil,
+  saffronJar,
+  saffronSerum,
   saffronStigmas,
-  saffronThreads,
 };
